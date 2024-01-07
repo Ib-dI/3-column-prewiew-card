@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca:wght@200;400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+
+body{
+    display: grid;
+    min-height: 100vh;
+    place-items: center center;
+    font-family: 'Lexend Deca', sans-serif;
+
+}
+
+.container{
+    width: 800px;
+    height: 400px;
+    display: flex;
+
+}
+.block{
+    padding: 30px;
+}
+.orange{
+    background-color: hsl(31, 77%, 52%);
+    border-top-left-radius: .6rem;
+    border-bottom-left-radius: .6rem;
+}
+.blue{
+    background-color: hsl(184, 100%, 22%);
+}
+.green{
+    background-color: hsl(179, 100%, 13%);
+    border-top-right-radius: .6rem;
+    border-bottom-right-radius: .6rem;
+}
+button{
+    width: 140px;
+    height: 46px;
+    border: none;
+    border-radius: 30px;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 500;
+    background-color: hsl(0, 0%, 95%);
+    margin-top: 30px;
+
+}
+.orange button{
+    color: hsl(31, 77%, 52%);
+}
+.blue button{
+    color: hsl(184, 100%, 22%);
+}
+.green button{
+    color: hsl(179, 100%, 13%);
+}
+
+button:hover{
+    border: solid 2px hsl(0, 0%, 95%);
+    cursor: pointer;
+}
+.orange button:hover{
+    color: hsl(0, 0%, 95%);
+    background-color: hsl(31, 77%, 52%);
+}
+.blue button:hover{
+    color: hsl(0, 0%, 95%);
+    background-color: hsl(184, 100%, 22%);
+}
+.green button:hover{
+    color: hsl(0, 0%, 95%);
+    background-color: hsl(179, 100%, 13%);
+}
+
+.logo{
+    width: 60px;
+    height: 38px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 30px;
+}
+.logo-car-1{
+    
+    background-image: url(./images/icon-sedans.svg);
+}
+.logo-car-2{
+
+    background-image: url(./images/icon-suvs.svg);
+}
+.logo-car-3{
+
+    background-image: url(./images/icon-luxury.svg);
+}
+
+h1{
+    font-family: 'Big Shoulders Display', cursive;
+    text-transform: uppercase;
+    color: hsl(0, 0%, 95%);
+}
+p{  
+    color: hsla(0, 0%, 100%, 0.75);
+    margin: 20px 0;
+    font-size: 15px;
+    font-weight: normal;
+}
+
+@media (max-width: 1024px) {
+    .container{
+        width: 95%;
+    }
+}
+
+@media (max-width: 525px) {
+    
+    .container{
+        margin: 20px 0;
+        min-width: 325px;
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center
+        flex-grow
+    }
+    .block{
+        width: 70%;
+        flex-shrink: 0;
+    }
+    .orange{
+        border-top-right-radius: .6rem;
+        border-bottom-left-radius: 0;
+    }
+    .green{
+        background-color: hsl(179, 100%, 13%);
+        border-top-right-radius: 0;
+        border-bottom-left-radius: .6rem;
+    }
+}
